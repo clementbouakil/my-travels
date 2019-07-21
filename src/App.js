@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Travel from './Travel';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Travel 
+          desination="Tokyo"
+          country="Japan"
+          photo="https://red-point.fr/wp-content/uploads/2017/02/tokyo-mud-bath-bar-mudbath0716.jpg"
+          distance="9 710 km"
+        />
+        <Travel 
+          desination="New York"
+          country="USA"
+          photo="https://cdn.getyourguide.com/img/tour_img-1667715-146.jpg"
+          distance="5 834 km"
+        />
+      </div>
+    )
+  }
 }
 
 export default App;
