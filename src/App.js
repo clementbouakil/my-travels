@@ -2,23 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Travel from './Travel';
+import Travels from './Travels';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Travel 
-          destination="Tokyo"
-          country="Japan"
-          photo="https://red-point.fr/wp-content/uploads/2017/02/tokyo-mud-bath-bar-mudbath0716.jpg"
-          distance="9 710 km"
+          destination="Bruxelles"
+          country="Belgium"
+          photo="https://media.routard.com/image/80/0/bruxelles-grand-place.1537800.w740.jpg"
+          distance="400 km"
         />
-        <Travel 
-          destination="New York"
-          country="USA"
-          photo="https://cdn.getyourguide.com/img/tour_img-1667715-146.jpg"
-          distance="5 834 km"
-        />
+        <Travels />
       </div>
     )
   }
